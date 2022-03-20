@@ -16,7 +16,7 @@ params = dict(
 resp = requests.get(url=url, params=params)
 crypto_trade = resp.json()  # Check the JSON Response Content documentation below
 
-name = ['time', 'unknown1', 'unknown2', 'open', 'close', 'high', 'low', 'vol', 'zero1', 'zero2', 'unknown3']
+name = ['time', 'unknown1', 'unknown2', 'open', 'close', 'high', 'low', 'volume', 'zero1', 'zero2', 'unknown3']
 
 raw = pd.DataFrame(columns=name, data=crypto_trade)
 
